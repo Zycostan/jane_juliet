@@ -1,5 +1,5 @@
 body {
-    background-color: #131e34;
+    background-color: #272744;
     margin: 0;
     padding: 0;
 }
@@ -25,12 +25,12 @@ body {
 }
 
 #left-side {
-    background-color: #3d7be0;
+    background-color: #8b6d9c;
     z-index: 2;
 }
 
 #right-side {
-    background-color: #c297f2;
+    background-color: #494d7e;
 }
 
 .side .title {
@@ -65,10 +65,10 @@ h1 > .early {
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
-        #f6e7f8,
-        #f2cbf1,
-        #ce8dad,
-        #f6e7f8
+        #f2d3ab,
+        #c69fa5,
+        #8b6d9c,
+        #f2d3ab
     );
     background-size: 200%;
     -webkit-background-clip: text;
@@ -77,4 +77,66 @@ h1 > .early {
     color: transparent;
     white-space: nowrap;
 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 300px));
+    gap: 8px;
+    width: max-content;
+    max-width: 100%;
+}
+
+.card {
+    background-color: rgba(198, 159, 165, 0.35);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 260px;
+    position: relative;
+    width: 300px;
+    overflow: hidden
+    ;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card::before {
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(242, 211, 171, 0.4) 30%
+	rgba(198, 159, 165, 0.2) 50%
+	rgba(198, 159, 165, 0.1) 60%,
+        transparent 80%
+        
+    );
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+    z-index: 1;
+    mix-blend-mode: lighten;
+}
+
+.card > .card-content {
+    background-color: #494d7e;
+    border-radius: inherit;
+    height: calc(100% - 2px);
+    margin: 1px;
+    width: calc(100% - 2px);
+    position: relative;
+    z-index: 2;
 }
