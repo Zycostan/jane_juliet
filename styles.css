@@ -23,12 +23,12 @@ body {
 }
 
 #left-side {
-    background-color: lightskyblue;
+    background: linear-gradient(135deg, #0055ff, #00d2ff);
     z-index: 2;
 }
 
 #right-side {
-    background-color: indianred;
+    background: linear-gradient(135deg, #bd007c, #ff0055);
 }
 
 .side .title {
