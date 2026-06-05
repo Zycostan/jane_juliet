@@ -2,6 +2,26 @@
     background-color: black;
 }
 
+.side {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    position: absolute;
+}
+
+#left-side {
+    background-color: lightskyblue;
+    z-index: 2;
+}
+
+#right-side {
+    background-color: indianred;
+}
+
 .side .title{
     color: white;
     font-family: 'Times New Roman', Times, serif;
