@@ -52,7 +52,8 @@ body {
 }
 
 h1 {
-    color: white
+    color: white;
+    
 }
 
 h1 > .early {
