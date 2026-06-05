@@ -52,7 +52,7 @@
 }
 
 h1 > .early {
-    color: white
+    color: white;
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
