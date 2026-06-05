@@ -1,5 +1,5 @@
 const left = document.getElementById("left-side");
-const header = document.querySelector("larping_head");
+const header = document.querySelector(".larping_head");
 
 const handleOnMove = e => {
     const p = e.clientX / window.innerWidth * 100;
