@@ -51,6 +51,10 @@ body {
     }
 }
 
+h1 {
+    color: white
+}
+
 h1 > .early {
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
