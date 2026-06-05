@@ -14,12 +14,12 @@ body {
 }
 
 #left-side {
-    background-color: lightskyblue;
+    background-color: var(--lightskyblue);
     z-index: 2;
 }
 
 #right-side {
-    background-color: indianred;
+    background-color: var(--indianred);
 }
 
 .side .title {
