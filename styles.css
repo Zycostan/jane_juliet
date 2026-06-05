@@ -1,6 +1,7 @@
-body {
+* {
     background-color: rgb(25, 26, 25);
     margin: 0;
+    
 }
 
 .larping_head {
@@ -51,6 +52,7 @@ body {
 }
 
 h1 > .early {
+    color: white
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
