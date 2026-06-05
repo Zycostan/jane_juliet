@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: "Rubik", sans-serif;
 }
 
 .larping_head {
@@ -31,10 +32,22 @@ body {
 
 .side .title {
     color: white;
-    font-family: "Rubik", sans-serif, cursive;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     margin: 0px 15vw;
     width: 70vw;
     white-space: nowrap;
     text-align: center;
+}
+
+h1 .early {
+    background: linear-gradient(
+        to right,
+        lightskyblue,
+        indianred
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+
 }
