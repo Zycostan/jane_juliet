@@ -1,8 +1,10 @@
 body {
-    background-color: rgb(25, 26, 25);
+    background-color: #102344;
     margin: 0;
     padding: 0;
 }
+
+
 
 .larping_head {
     position: relative;
@@ -23,16 +25,16 @@ body {
 }
 
 #left-side {
-    background: linear-gradient(135deg, #0055ff, #00d2ff);
+    background-color: #3d7be0;
     z-index: 2;
 }
 
 #right-side {
-    background: linear-gradient(135deg, #bd007c, #ff0055);
+    background-color: #c297f2;
 }
 
 .side .title {
-    color: white;
+    color: #fbf5fd;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     margin: 0px 15vw;
@@ -52,7 +54,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: #fbf5fd;
     text-align: center;
     width: 100%;
     margin: 2rem 0;
@@ -63,10 +65,10 @@ h1 > .early {
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
-        rgb(123, 31, 162),
-        rgb(103, 58, 183),
-        rgb(244, 143, 183),
-        rgb(123, 31, 162)
+        #f6e7f8,
+        #f2cbf1,
+        #ce8dad,
+        #f6e7f8
     );
     background-size: 200%;
     -webkit-background-clip: text;
