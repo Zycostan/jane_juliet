@@ -31,8 +31,8 @@ body {
 
 .side .title {
     color: white;
-    font-family: "Lobster", cursive;
-    font-size: 8vw;
+    font-family: "Rubik", sans-serif, cursive;
+    font-size: 3rem;
     margin: 0px 15vw;
     width: 70vw;
     white-space: nowrap;
