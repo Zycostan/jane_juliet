@@ -14,12 +14,12 @@ body {
 }
 
 #left-side {
-    background-color: var(--lightskyblue);
+    background-color: lightskyblue;
     z-index: 2;
 }
 
 #right-side {
-    background-color: var(--indianred);
+    background-color: indianred;
 }
 
 .side .title {
@@ -28,4 +28,6 @@ body {
     font-size: 8vw;
     margin: 0px 15vw;
     width: 70vw;
+    white-space: nowrap;
+    text-align: center;
 }
