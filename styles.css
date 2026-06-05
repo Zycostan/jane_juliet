@@ -1,7 +1,7 @@
-* {
+body {
     background-color: rgb(25, 26, 25);
     margin: 0;
-    
+    padding: 0;
 }
 
 .larping_head {
@@ -52,7 +52,6 @@
 }
 
 h1 > .early {
-    color: white;
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
@@ -62,6 +61,7 @@ h1 > .early {
         rgb(123, 31, 162)
     );
     background-size: 200%;
+    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
