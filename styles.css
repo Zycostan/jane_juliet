@@ -1,3 +1,9 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #272744;
     margin: 0;
@@ -139,4 +145,17 @@ main {
     width: calc(100% - 2px);
     position: relative;
     z-index: 2;
+    font-family: 'Times New Roman', Times, serif;
+    color: fbf5ef;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-alight: center;
+}
+
+.card-content {
+    font-family: 'Arial', sans-serif;
+    color: #fbf5ef;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
 }
