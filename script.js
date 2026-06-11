@@ -1,27 +1,35 @@
-const left = document.getElementById("left-side");
-const header = document.querySelector(".larping_head");
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-const handleOnMove = e => {
-    const p = e.clientX / window.innerWidth * 100;
+apply_mode()
 
-    left.style.width = `${p}%`;
+function dark_mode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    if (element.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
 }
 
-const handleOnMouseMove = e => {
-   const {  currentTarget: target } = e;
+function apply_mode() {
+    var saved = localStorage.getItem("theme");
 
-   const rect = target.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-   target.style.setProperty("--mouse-x",`${x}px`)
-   target.style.setProperty("--mouse-y",`${y}px`)
+    if (saved == "dark") {
+        document.body.classList.add("dark-mode");
+    }
 }
 
-header.onmousemove = e => handleOnMove(e);
-
-header.ontouchmove = e => handleOnMove(e.touches[0]);
-
-for(const card of document.querySelectorAll(".card")) {
-    card.onmousemove = e => handleOnMouseMove(e);
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
 }
